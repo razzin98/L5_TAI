@@ -23,7 +23,7 @@ class Complex {
         return Math.sqrt((this.re*this.re)+(this.imag*this.imag));
     }
     write(){
-        return this;
+        console.log('Real: ', this.re,', ',this.imag,'i.');
     }
 }
 
@@ -32,13 +32,13 @@ let complex2=new Complex(9,5);
 
 console.log('Dodawanie: ',
     complex1.getRe(),', ',complex1.getImag(),'i + ',
-    complex2.getRe(),', ',complex2.getImag(),'i = ',
-    complex1.add(complex2).write()                );
+    complex2.getRe(),', ',complex2.getImag(),'i');
+complex1.add(complex2).write();
 
 let sub= complex1.sub(complex2);
 console.log('Odejmowanie: ',
     complex1.getRe(),', ',complex1.getImag(),'i - ',
-    complex2.getRe(),', ',complex2.getImag(),'i = ',
-    complex1.sub(complex2).write()                );
+    complex2.getRe(),', ',complex2.getImag(),'i');
+complex1.sub(complex2).write();
 
 console.log("Moduł :", complex1.sub(complex2).mod()  );
