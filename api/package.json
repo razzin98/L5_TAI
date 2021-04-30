@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app/api/index.js"
+    "start": "node app/api/index.js",
+    "run app": "./node_modules/.bin/nodemon app"
   },
   "author": "Adam Kulas",
   "license": "ISC",
