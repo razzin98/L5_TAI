@@ -1,1 +1,3 @@
 /.idea/
+# dependencies
+/api/node_modules/
